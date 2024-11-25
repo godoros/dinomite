@@ -18,11 +18,13 @@ def shrimpRight(hub: PrimeHub, robot: DriveBase, lmotor: Motor):
     robot.turn(90)
     robot.straight(200)
     robot.straight(-850)
+
 def whale_eats(hub: PrimeHub, robot: DriveBase, lmotor: Motor):
     robot.settings(straight_speed=300, turn_rate=100)
     robot.straight(675)
     robot.turn(-45)
     robot.straight(280)
+    wait(100)
     robot.straight(-280)
     robot.turn(45)
     robot.straight(-750)
