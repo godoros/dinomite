@@ -13,6 +13,8 @@ from shrimpleft import *
 from flower import *
 from testutil import *
 from coral_nursery import *
+from anglerfish import *
+
 def waitKey(hub: PrimeHub):
     while True:
         pressed = hub.buttons.pressed()
@@ -49,7 +51,7 @@ hub, robot, lmotor, rmotor = setup()
 hub.system.set_stop_button((Button.CENTER, Button.BLUETOOTH))
 
 while True:
-    sel = hub_menu("Z", "A", "L", "R", "M", "1", "2", "3", "4", "5", "6", "7")
+    sel = hub_menu("Z", "A", "L", "R", "M", "1", "2", "3", "4", "5", "6", "7", "8")
     if sel == "Z":
         break
     elif sel == "A": 
@@ -75,5 +77,7 @@ while True:
         runFlower(hub, robot, lmotor, rmotor)
     elif sel == "7":
         run_coral_nursery(hub, robot, lmotor, rmotor)
+    elif sel == "8":
+        run_anglerfish(hub, robot, lmotor)
 print("done")
 
