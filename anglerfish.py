@@ -13,7 +13,11 @@ def run_anglerfish(hub: PrimeHub, robot: DriveBase, lmotor: Motor):
     robot.straight(160)
     robot.straight(-150)
     robot.turn(40)
-    robot.straight(300)
+    robot.straight(600)
+    robot.turn(40)
+    robot.straight(220)
+    robot.turn(40)
+    robot.straight(900)
 
 
 
