@@ -67,37 +67,53 @@ hub, robot, lmotor, rmotor = setup()
 hub.system.set_stop_button((Button.CENTER, Button.BLUETOOTH))
 
 while True:
+    # define a menu. this shows up on primehub display.
+    # use left/right arrow to switch and center button to accept
     sel = hub_menu("Z", "A", "T", "0", "L", "R", "M", "1", "2", "3", "4", "5", "6", "7", "8")
     if sel == "Z":
+        # exit program
         break
     elif sel == "A": 
+        # run all missions one by one. press any button to goto next mission.
         runAll(hub, robot, lmotor, rmotor)
-        # runSonar(hub, robot, lmotor)
     elif sel == "T": 
+        # run all the missions on the right of table
         runAllRight(hub, robot, lmotor, rmotor)
     elif sel == "0": 
+        # start from left to go cross
         runStartFromCross(hub, robot, lmotor, rmotor)
     elif sel == "L": 
+        # test to rotate left motor
         testLeftMotor(hub, lmotor)
     elif sel == "R":
+        # test to rotate right motor
         testLeftMotor(hub, rmotor)
     elif sel == "M":
+        # go forward and come back
         testBackAndForth(hub, robot)
     elif sel == "1":
+        # collect all krills on the left of table
         shrimpLeft(hub, robot, lmotor)
     elif sel == "2":
+        # coral_nursery and shark
         run_coral_nursery(hub, robot, lmotor, rmotor)
     elif sel == "3":
+        # mast mission
         raiseFoopyMast(hub, robot)
     elif sel == "4":
+        # cross the table from left to right
         goAcross(hub, robot, lmotor, rmotor)
     elif sel == "5":
+        # collect all krills on the right
         shrimpRight(hub, robot, lmotor)
     elif sel == "6":
+        # sonar mission
         runSonar(hub, robot, lmotor)
     elif sel == "7":
+        # whale mission
         whale_eats(hub, robot, lmotor)
     elif sel == "8":
+        # anglerfish mission
         run_anglerfish(hub, robot, lmotor)
     elif sel == "9":
         runFlower(hub, robot, lmotor, rmotor)
