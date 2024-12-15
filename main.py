@@ -27,9 +27,11 @@ def goAcross(hub: PrimeHub, robot: DriveBase, lmotor: Motor, rmotor: Motor):
     robot.settings(straight_speed=300)
     robot.straight(600)
     robot.straight(-200)
-    robot.turn(-40)
+    robot.turn(-45)
     robot.settings(straight_speed=500)
-    robot.straight(1300)
+    robot.straight(650)
+    robot.turn(-25)
+    robot.straight(650)
 
 
 def runAll(hub: PrimeHub, robot: DriveBase, lmotor: Motor, rmotor: Motor):

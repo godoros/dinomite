@@ -6,7 +6,7 @@ from pybricks.robotics import DriveBase
 def run_coral_nursery(hub: PrimeHub, robot: DriveBase, lmotor: Motor, rmotor: Motor):
     robot.settings(straight_speed=350, turn_rate=100)
     # go forward and stop before nursery
-    robot.straight(490)
+    robot.straight(480)
     # turn right a bit to avoid hitting nursery
     robot.turn(-45)
     # forward a bit to aligh with nursery

@@ -13,7 +13,7 @@ def setup():
     rightfront_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)
 
     # Initialize the drive base. In this example, the wheel diameter is 56mm.
-    # The distance between the two wheel-ground contact points is 112mm.
+    # The distance between the two wheel-ground contact points is 80mm.
     robot = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=80)
     # robot.use_gyro(True)
     return hub, robot, leftfront_motor, rightfront_motor

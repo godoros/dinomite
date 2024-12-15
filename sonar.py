@@ -12,11 +12,11 @@ def runSonar(hub: PrimeHub, robot: DriveBase, lmotor: Motor):
     # turn left 30 degrees
     robot.turn(30)
     # go forward (diagonally) and stop before sonar
-    robot.straight(500)
+    robot.straight(480)
     # turn right to make it straight 12'o clock direction
     robot.turn(-30)
     # go forward to align with sonar
-    robot.straight(200)
+    robot.straight(210)
     # rotate arm to flip both flippers
     lmotor.run_angle(speed=300, rotation_angle=750) 
     # come back

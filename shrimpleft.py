@@ -18,4 +18,4 @@ def shrimpLeft(hub: PrimeHub, robot: DriveBase, lmotor: Motor):
     robot.settings(straight_speed=400)
     robot.straight(-600)
     robot.turn(-50)
-    robot.straight(-450)
+    robot.straight(-350)

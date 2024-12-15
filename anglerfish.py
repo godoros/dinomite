@@ -13,15 +13,15 @@ def run_anglerfish(hub: PrimeHub, robot: DriveBase, lmotor: Motor):
     robot.turn(-30)
     robot.straight(500)
     # turn right toward the cold sea 
-    robot.turn(-52)
+    robot.turn(-48)
     # go to cold sea so octopus land in the sea
     robot.straight(160)
     # come back a bit to leave octopus in the sea
     robot.straight(-150)
     # turn left to align with anglerfish
-    robot.turn(40)
+    robot.turn(35)
     # go straight to push the latch
-    robot.straight(600)
+    robot.straight(500)
     # stop there. end of game
 
 
